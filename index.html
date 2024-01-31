@@ -7,18 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
-    <div class="container">
-        <nav class="navbar navbar-expand-sm navbar-light bg-light">
-            <a class="navbar-brand" href="#">Nasghul</a>
-            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-                aria-expanded="false" aria-label="Toggle navigation">
+    
+    <!-- Navbar  -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand text-warning" href="#">Nasrul Arsyad</a>
+            <button class="navbar-toggler d-lg-none" 
+                type="button" 
+                data-toggle="collapse" 
+                data-target="#navmenu" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavId">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="#Home">Home <span class="sr-only">(current)</span></a>
                     </li>
@@ -33,18 +40,63 @@
                     </li>
                 </ul>
             </div>
-        </nav>
-    </div>
-
+        </div>
+    </nav>
+    
     <!-- Home page -->
-    <div class="container" id="Home">
-        <p>Home</p>
-    </div>
+   <section class="bg-dark text-light p-5 text-sm-start ">
+    
+        <div class="container px-0  ">
+           <div class="d-sm-flex align-items-center justify-content-between">
+            <div class="container">
+                <h2>Hi, Everyone !</h2>
+                <h1>I am <span class="text-warning"> Nasrul Arsyad</span> </h1>
+                <p class="lead my-4">An Entry Level Web Developer passionate about web development. Welcome to my online space where creativity meets functionality. Explore my journey through code and design together.</p>
+                <button class="btn-primary btn-lg">Contact Me</button>
+            </div>
+            
+            
+            <img class="img-fluid rounded-circle d-none d-sm-block" src="/gambar sabah.jpg" alt="Nasrul Arsyad profile picture">
+         </div> 
+        
+        
+        </div>
+   </section>
+
+
 
     <!-- About Me page -->
-    <div class="container" id="About">
-        <p>About</p>
-    </div>
+    <section class="bg-light text-dark p-5 text-sm-start">
+
+        <div class="container px-0  ">
+            
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <img class="img-fluid rounded-circle" src="/my image.jpg" alt="Nasrul Arsyad Baju Melayu pic">
+
+             <div class="container  ">
+                <h1>About Me</h1>
+                <p class="lead my-4">My name is Nasrul Arsyad bin Hamidi and born in Johor Bahru, Johor. I am fresh graduate from Universiti 
+                    Teknologi MARA, Shah Alam studied in Bachelor's Degree in Information Technology (Hons.). I specialize in a range of programming languages and frameworks. 
+                </p> 
+                
+                <p class="lead font-weight-bold">Programming Skills:</p>
+                <ul class="list-group">
+                    <li class="list-group-item">Programming Languages: Java, HTML, CSS, JavaScript, PHP, Python, SQL, VB.Net</li>
+                    <li class="list-group-item">Frameworks: Android Studio, .NET Framework</li>
+                    <li class="list-group-item">Database Technologies: MySQL</li>
+                  </ul>
+                
+                <p class="lead my-4"> My coding journey is fueled by a curiosity for problem-solving and a commitment to creating seamless digital experiences. 
+                    Whether it's crafting intuitive front-end interfaces or architecting robust back-end systems, I find joy in the intricacies of building 
+                    efficient, scalable solutions.Feel free to browse my portfolio, and don't hesitate to reach out for collaboration or exciting opportunities.</p>
+             </div>
+            
+            </div> 
+         
+         
+         </div>
+
+    </section>
 
     <!-- Portfolio Page -->
     <div class="container" id="Portfolio">
