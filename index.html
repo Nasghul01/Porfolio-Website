@@ -8,12 +8,17 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" crossorigin="anonymous">
   </head>
   <body>
     
     <!-- Navbar  -->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark" id="Home">
         <div class="container">
             <a class="navbar-brand text-warning" href="#">Nasrul Arsyad</a>
             <button class="navbar-toggler d-lg-none" 
@@ -27,7 +32,7 @@
             <div class="collapse navbar-collapse" id="navmenu">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#Home">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#Home">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#About">About</a>
@@ -44,7 +49,7 @@
     </nav>
     
     <!-- Home page -->
-   <section class="bg-dark text-light p-5 text-sm-start ">
+   <section class="bg-dark text-light p-5 text-sm-start">
     
         <div class="container px-0  ">
            <div class="d-sm-flex align-items-center justify-content-between">
@@ -66,15 +71,15 @@
 
 
     <!-- About Me page -->
-    <section class="bg-light text-dark p-5 text-sm-start">
+    <section class="bg-light text-dark p-5 text-sm-start" id="About">
 
         <div class="container px-0  ">
             
             <div class="d-sm-flex align-items-center justify-content-between">
-                <img class="img-fluid rounded-circle" src="/my image.jpg" alt="Nasrul Arsyad Baju Melayu pic">
+                <img class="img-fluid d-none d-sm-block rounded-circle" src="/my image.jpg" alt="Nasrul Arsyad Baju Melayu pic">
 
              <div class="container  ">
-                <h1>About Me</h1>
+                <h2>About Me</h1>
                 <p class="lead my-4">My name is Nasrul Arsyad bin Hamidi and born in Johor Bahru, Johor. I am fresh graduate from Universiti 
                     Teknologi MARA, Shah Alam studied in Bachelor's Degree in Information Technology (Hons.). I specialize in a range of programming languages and frameworks. 
                 </p> 
@@ -86,9 +91,7 @@
                     <li class="list-group-item">Database Technologies: MySQL</li>
                   </ul>
                 
-                <p class="lead my-4"> My coding journey is fueled by a curiosity for problem-solving and a commitment to creating seamless digital experiences. 
-                    Whether it's crafting intuitive front-end interfaces or architecting robust back-end systems, I find joy in the intricacies of building 
-                    efficient, scalable solutions.Feel free to browse my portfolio, and don't hesitate to reach out for collaboration or exciting opportunities.</p>
+                <p class="lead my-4">Feel free to browse my portfolio, and don't hesitate to reach out for collaboration or exciting opportunities.</p>
              </div>
             
             </div> 
@@ -98,19 +101,66 @@
 
     </section>
 
+
+
     <!-- Portfolio Page -->
-    <div class="container" id="Portfolio">
-        <p>Portfolio</p>
-    </div>
+    <section class="p-5 bg-secondary-light" id="Portfolio">
+        <div class="container">
+            <h2 class="text-center mb-5">Portfolio</h1>
+            <div class="row g-4 text-center">
+                <div class="col-md">
+                    <div class="card bg-secondary text-light">
+                        <div class="card-body text-center">
+                            <!-- <div class="h1 mb-3">
+                                <i class="bi bi-laptop"></i>
+                            </div> -->
+                            <h3 class="card-title mb-3">Mobile Apps Development</h3>
+                           <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ex quis nostrum aperiam odio! Quas expedita laboriosam id odio. Soluta id blanditiis neque minima odio dolore fugiat quae voluptates repudiandae?</p>
+                           <a href="#" class="btn btn-warning">Click Here</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body text-center">
+                            <!-- <div class="h1 mb-3">
+                                <i class="bi bi-laptop"></i>
+                            </div> -->
+                            <h3 class="card-title mb-3">Web Apps Development</h3>
+                           <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ex quis nostrum aperiam odio! Quas expedita laboriosam id odio. Soluta id blanditiis neque minima odio dolore fugiat quae voluptates repudiandae?</p>
+                           <a href="#" class="btn btn-warning">Click Here</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-secondary text-light">
+                        <div class="card-body text-center">
+                            <!-- <div class="h1 mb-3">
+                                <i class="bi bi-laptop"></i>
+                            </div> -->
+                            <h3 class="card-title mb-3">Mobile Apps Development</h3>
+                           <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ex quis nostrum aperiam odio! Quas expedita laboriosam id odio. Soluta id blanditiis neque minima odio dolore fugiat quae voluptates repudiandae?</p>
+                           <a href="#" class="btn btn-warning">Click Here</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Contact Page -->
     <div class="container" id="Contact">
         <p>Contact</p>
     </div>
-    
-        
-    
-      
+
+    <footer class="bg-dark text-white p-5 text-center position-relative">
+        <div class="container">
+            <p class="lead">&copy; 2024 Nasrul Arsyad. All rights reserved.</p>
+            <a href="#" class="position-absolute bottom-0 end-0 p-5">
+                <i class="bi bi-arrow-up-circle h1"></i>
+            </a>
+        </div>
+    </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
